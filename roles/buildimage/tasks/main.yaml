@@ -1,12 +1,12 @@
 ---
 - name: Get namespace
-  ansible.builtin.shell: kubectl get namespace
-  register: namespace
+  ansible.builtin.command: "echo {{ vault_cluster }}"
+  changed_when: ture
   # when: namespace.changed == "false"
 
-- name: Debug
-  ansible.builtin.debug:
-      var: namespace
+# - name: Debug
+#   ansible.builtin.debug:
+#       var: namespace
 
 
 # - name: Test get pod
