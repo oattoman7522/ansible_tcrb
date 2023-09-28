@@ -1,6 +1,6 @@
 ---
 - name: TCRB
-  ansible.builtin.command: echo {{ vault_cluster }}
+  ansible.builtin.command: echo testtcrb
   changed_when: ture
   # when: namespace.changed == "false"
 
