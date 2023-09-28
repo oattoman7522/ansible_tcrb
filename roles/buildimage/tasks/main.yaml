@@ -1,12 +1,13 @@
 ---
 - name: TCRB
   ansible.builtin.command: echo testtcrb
+  register: testecho
   changed_when: ture
   # when: namespace.changed == "false"
 
-# - name: Debug
-#   ansible.builtin.debug:
-#       var: namespace
+- name: Debug
+  ansible.builtin.debug:
+      var: namespace
 
 
 # - name: Test get pod
