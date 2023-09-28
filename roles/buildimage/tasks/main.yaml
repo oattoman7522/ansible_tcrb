@@ -1,0 +1,14 @@
+---
+- name: Get namespace
+  ansible.builtin.shell: kubectl get namespace
+  register: namespace
+  # when: namespace.changed == "false"
+
+- name: Debug
+  ansible.builtin.debug:
+      var: namespace
+
+
+# - name: Test get pod
+#   ansible.builtin.command: sudo kubectl get po -A
+#   changed_when: ture
