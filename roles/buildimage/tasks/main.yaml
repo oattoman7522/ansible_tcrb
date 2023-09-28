@@ -1,6 +1,6 @@
 ---
 - name: Get namespace
-  ansible.builtin.command: "echo {{ env.EXTRA_VARS }}"
+  ansible.builtin.command: echo {{ env.EXTRA_VARS }}
   changed_when: ture
   # when: namespace.changed == "false"
 
