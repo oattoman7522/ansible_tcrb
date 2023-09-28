@@ -1,5 +1,5 @@
 ---
-- name: Get namespace
+- name: TCRB
   ansible.builtin.command: echo {{ vault_cluster }}
   changed_when: ture
   # when: namespace.changed == "false"
